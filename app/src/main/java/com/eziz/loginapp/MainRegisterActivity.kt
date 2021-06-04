@@ -18,7 +18,7 @@ class MainRegisterActivity : AppCompatActivity() {
             var SharedPreferences = this.getSharedPreferences("info", MODE_PRIVATE)
             var editor = SharedPreferences.edit()
 
-            editor.putString("usernama", "$username").apply()
+            editor.putString("username", "$username").apply()
             editor.putString("password", "$password").apply()
             Toast.makeText(applicationContext, "Successful", Toast.LENGTH_LONG).show()
             registerUsername.text.clear()
