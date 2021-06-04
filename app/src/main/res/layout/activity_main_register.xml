@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".MainActivity">
+    tools:context=".MainRegisterActivity">
+
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
+        android:layout_width="361dp"
         android:layout_height="125dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="100dp"
@@ -21,7 +22,7 @@
 
 
     <Button
-        android:id="@+id/loginRegisterBtn"
+        android:id="@+id/registerGoBack"
         android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -29,20 +30,20 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="126dp"
         android:background="@drawable/buttonbackground"
-        android:text="Qeydiyyat"
-        android:textSize="18sp"
+        android:text="Geri dön"
         android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/registerSave" />
 
     <EditText
-        android:id="@+id/loginUsername"
-        android:layout_width="0dp"
+        android:id="@+id/registerUsername"
+        android:layout_width="361dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="85dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/edittextback"
         android:drawableLeft="@drawable/ic_baseline_account_circle1_24"
@@ -55,13 +56,12 @@
         android:textColorHint="@color/colorAssets"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/loginPassword"
-        android:layout_width="0dp"
+        android:id="@+id/registerPassword"
+        android:layout_width="361dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
@@ -78,16 +78,16 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/registerUsername" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="16dp"
-        android:text="Xoş gəldiniz Aziz."
+        android:text="Qeydiyat məlumatlarını doldurun."
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,21 +95,19 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/loginBtn"
-        android:layout_width="150sp"
+        android:id="@+id/registerSave"
+        android:layout_width="160sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/buttonbackground"
-        android:text="Giriş et"
-        android:textSize="18sp"
+
+        android:text="Yadda saxla"
         android:textColor="@color/white"
-
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
-
+        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
